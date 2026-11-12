@@ -1,14 +1,93 @@
 /* Code for all screen sizes */
+main {
+  background-color: rgb(190, 187, 142);
+}
+
+.companytext {
+  color: rgb(67, 95, 77);
+  font-family: "Cormorant";
+  font-weight: 580;
+  font-style: normal;
+  font-size: x-large;
+  line-height: 28px;
+  margin-top: 28px;
+  letter-spacing: 5px;
+}
+
+.small-companytext {
+  color: rgb(54, 54, 54);
+  font-family: "Cormorant";
+  font-weight: 530;
+  font-style: normal;
+  font-size: medium;
+  line-height: 28px;
+  margin-top: -27px;
+  letter-spacing: 2px;
+}
+
+.bottomtext {
+  color: rgb(18, 18, 18);
+  font-family: "Cormorant";
+  font-weight: 550;
+  font-style: normal;
+  font-size: x-large;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin-top: 32px;
+}
+
+.smaller-bottomtext {
+  color: rgb(18, 18, 18);
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-style: normal;
+  font-size: small;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  margin-top: -5px;
+}
+
+.logoimage {
+  margin-top: 32px;
+}
+
+.media-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.allcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.adpicture {
+  outline: 1px solid rgb(80, 80, 80);
+}
 
 /* BEGIN MOBILE RULES */
 @media only screen and (max-width: 767px) {
   /* Code for mobile phones only: */
+
+  .imagecontainer {
+    flex-direction: column;
+  }
 
   /* Mobile label */
   main::before {
     content: "Mobile";
     background-color: #c8787888;
   }
+
   /* End mobile label */
 }
 
@@ -21,6 +100,7 @@
     content: "Laptop";
     background-color: #45454588;
   }
+
   /* End laptop label */
 }
 
@@ -33,6 +113,7 @@
     content: "Wide";
     background-color: #00438888;
   }
+
   /* End widescreen label */
 }
 
