@@ -1,8 +1,7 @@
 /* CSS for your imitation here */
 main {
-  width: 900px;
-  height: 580px;
-  border: 4px solid;
+  width: 835px;
+  height: 535px;
   margin-inline: auto;
   background-color: rgb(190, 187, 142);
 }
@@ -10,15 +9,70 @@ main {
 .companytext {
   color: rgb(67, 95, 77);
   font-family: "Cormorant";
-  font-weight: 530;
+  font-weight: 580;
   font-style: normal;
   font-size: x-large;
   line-height: 28px;
   margin-top: 28px;
+  letter-spacing: 5px;
+}
+
+.small-companytext {
+  color: rgb(54, 54, 54);
+  font-family: "Cormorant";
+  font-weight: 530;
+  font-style: normal;
+  font-size: medium;
+  line-height: 28px;
+  margin-top: -27px;
+  letter-spacing: 2px;
+}
+
+.bottomtext {
+  color: rgb(18, 18, 18);
+  font-family: "Cormorant";
+  font-weight: 550;
+  font-style: normal;
+  font-size: x-large;
+  line-height: 28px;
+  letter-spacing: 2px;
+  margin-top: 32px;
+}
+
+.smaller-bottomtext {
+  color: rgb(18, 18, 18);
+  font-family: "Cormorant";
+  font-weight: 600;
+  font-style: normal;
+  font-size: small;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  margin-top: -5px;
+}
+
+.logoimage {
+  margin-top: 32px;
 }
 
 .media-container {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.allcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagecontainer {
+  display: flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
+}
+
+.adpicture {
+  outline: 1px solid rgb(80, 80, 80);
 }
